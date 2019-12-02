@@ -1,0 +1,66 @@
+/* CSS for the Poker Game screen */
+#playGame {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#table {
+    background: url(../img/poker-table-top.png) center 300px no-repeat;
+    height: 100vh;
+    background-size: 1280px;
+}
+
+.playerAtTable {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.playerAtTable img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.playerText {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card {
+    height: 150px;
+    position: absolute;
+    top: 70vh;
+    left: 45vw;
+
+    transition: left 0.4s linear, top 0.4s ease-in;
+}
+
+#winnerText {
+    position: absolute;
+    top: 70vh;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#playAgainButton {
+    position: absolute;
+    top: 80vh;
+    height: 70px;
+    width: 167px;
+    border-radius: 50vw;
+    background-color: rgb(9, 39, 9);
+    cursor: pointer;
+
+    border: none;
+    margin: 0 44vw;
+    text-align: center;
+    font-size: 1.6rem;
+    box-shadow: 2px 4px 10px black;
+}
